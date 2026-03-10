@@ -39,7 +39,6 @@ while running:
     if keys[K_RIGHT] and car_x < width - car_width:
         car_x += 5
 
-    # Move the obstacle
     obstacle_y += obstacle_speed
     if obstacle_y > height:
         obstacle_y = -obstacle_height
@@ -61,4 +60,5 @@ while running:
     time.Clock().tick(60)
 
 quit()
+
 
